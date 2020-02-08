@@ -12,7 +12,6 @@ struct AddOrderViewModel {
     
     var name: String?
     var email: String?
-    
     var size: String?
     var type: String?
     

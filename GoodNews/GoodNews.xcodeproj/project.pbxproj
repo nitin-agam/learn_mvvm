@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		184960B423D807DD003FFB8C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184960B323D807DD003FFB8C /* Article.swift */; };
-		184960B623D80952003FFB8C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184960B523D80952003FFB8C /* DataManager.swift */; };
 		184960B923D80B5E003FFB8C /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184960B823D80B5E003FFB8C /* ArticleViewModel.swift */; };
 		184960BB23D80E28003FFB8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184960BA23D80E28003FFB8C /* Main.storyboard */; };
 		184960BE23D81069003FFB8C /* HeadlineTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184960BD23D81069003FFB8C /* HeadlineTableCell.swift */; };
@@ -21,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		184960B323D807DD003FFB8C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		184960B523D80952003FFB8C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		184960B823D80B5E003FFB8C /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		184960BA23D80E28003FFB8C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		184960BD23D81069003FFB8C /* HeadlineTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineTableCell.swift; sourceTree = "<group>"; };
@@ -89,15 +87,14 @@
 			isa = PBXGroup;
 			children = (
 				184960BC23D8104D003FFB8C /* Cells */,
-				184960B723D80B42003FFB8C /* ViewModel */,
 				184960B223D807C9003FFB8C /* Model */,
+				184960B723D80B42003FFB8C /* ViewModel */,
+				18E61FA823CF97C9006DD0A9 /* Controller */,
 				18E61FA923CF97D9006DD0A9 /* Manager */,
 				18E61F9223CF9471006DD0A9 /* AppDelegate.swift */,
 				18E61F9B23CF9473006DD0A9 /* Assets.xcassets */,
 				18E61F9D23CF9473006DD0A9 /* LaunchScreen.storyboard */,
 				18E61FA023CF9473006DD0A9 /* Info.plist */,
-				18E61FA823CF97C9006DD0A9 /* Controller */,
-				184960B523D80952003FFB8C /* DataManager.swift */,
 				184960BA23D80E28003FFB8C /* Main.storyboard */,
 			);
 			path = GoodNews;
@@ -191,7 +188,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				184960B423D807DD003FFB8C /* Article.swift in Sources */,
-				184960B623D80952003FFB8C /* DataManager.swift in Sources */,
 				18E61FA723CF961D006DD0A9 /* HeadlinesController.swift in Sources */,
 				184960B923D80B5E003FFB8C /* ArticleViewModel.swift in Sources */,
 				184960BE23D81069003FFB8C /* HeadlineTableCell.swift in Sources */,
@@ -333,14 +329,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N9CP8CEZY9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GoodNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.demo.GoodNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.GoodNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -352,14 +348,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N9CP8CEZY9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GoodNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.demo.GoodNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.GoodNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

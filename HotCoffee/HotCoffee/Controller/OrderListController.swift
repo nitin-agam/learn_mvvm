@@ -10,14 +10,18 @@ import UIKit
 
 class OrderListController: UITableViewController, AddOrderProtocol {
 
+    // MARK: - Variables
     var orderListViewModel = OrderListViewModel()
     
     
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchOrders()
     }
     
+    
+    // MARK: - Private Methods
     private func fetchOrders() {
         WebService().load(resource: Order.all) { [weak self] (result) in
             switch result {
@@ -46,7 +50,6 @@ class OrderListController: UITableViewController, AddOrderProtocol {
     }
     
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

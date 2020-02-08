@@ -28,7 +28,7 @@ class NewOrderController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     
-    // MARK: - View LifeCycle
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
@@ -86,6 +86,8 @@ class NewOrderController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    
+    // MARK: - Table's Methods
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -102,10 +104,5 @@ class NewOrderController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedTypeIndex = indexPath.row
-//        self.tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
     }
-    
-//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//        self.tableView.cellForRow(at: indexPath)?.accessoryType = .none
-//    }
 }

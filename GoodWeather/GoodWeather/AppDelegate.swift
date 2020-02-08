@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  GoodNews
+//  GoodWeather
 //
-//  Created by Nitin A on 16/01/20.
+//  Created by Nitin A on 25/01/20.
 //  Copyright © 2020 Nitin A. All rights reserved.
 //
 
@@ -13,14 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     static let kAppColor = UIColor(red: 0/255, green: 163/255, blue: 204/255, alpha: 1)
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        initialSetup()
+        setupNavigationBar()
+        setupDefaultSettings()
         return true
     }
     
-    private func initialSetup() {
-        
+    private func setupDefaultSettings() {
+        let userDefault = UserDefaults.standard
+        if userDefault.value(forKey: "unit") == nil {
+            userDefault.set(Unit.celsius.rawValue, forKey: "unit")
+        }
+    }
+    
+    private func setupNavigationBar() {
         // setup for navigation bar
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()

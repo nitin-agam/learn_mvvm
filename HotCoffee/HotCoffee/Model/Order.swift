@@ -32,14 +32,13 @@ enum CoffeeSize: String, Codable, CaseIterable {
 }
 
 struct Order: Codable {
+    
     let name: String
     let email: String
     let type: CoffeeType
     let size: CoffeeSize
-}
-
-extension Order {
     
+    // failable initializer
     init?(addOrderViewModel viewModel: AddOrderViewModel) {
         guard let name = viewModel.name,
             let email = viewModel.email,
@@ -53,9 +52,6 @@ extension Order {
         self.type = type
         self.size = size
     }
-}
-
-extension Order {
     
     static var all: Resource<[Order]> {
         guard let url = URL(string: "https://guarded-retreat-82533.herokuapp.com/orders") else {

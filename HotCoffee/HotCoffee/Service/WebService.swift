@@ -42,11 +42,9 @@ class WebService {
             
             do {
                 let responseData = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                print(responseData)
             } catch {
                 print("error")
             }
-            
             
             let result = try? JSONDecoder().decode(T.self, from: data)
             if let result = result {

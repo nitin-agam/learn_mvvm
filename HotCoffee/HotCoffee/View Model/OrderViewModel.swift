@@ -17,7 +17,7 @@ struct OrderListViewModel {
     }
 
     func orderViewModel(at index: Int) -> OrderViewModel {
-        return self.ordersViewModel[index]
+        return ordersViewModel[index]
     }
 }
 
@@ -26,18 +26,18 @@ struct OrderViewModel {
     let order: Order
     
     var name: String {
-        return self.order.name
+        return order.name
     }
     
     var email: String {
-        return self.order.email
+        return order.email
     }
     
     var type: String {
-        return self.order.type.rawValue.capitalized
+        return order.type.rawValue.capitalized
     }
 
     var size: String {
-        return self.order.size.rawValue.capitalized
+        return order.size.rawValue.capitalized
     }
 }

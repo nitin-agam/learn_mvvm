@@ -9,7 +9,6 @@
 import UIKit
 
 class HeadlineTableCell: UITableViewCell {
-
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
 }
